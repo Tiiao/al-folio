@@ -7,8 +7,8 @@ subtitle: Research Assistant Professor, <a href='https://www.ttic.edu'>Toyota Te
 profile:
   align: right
   image: profile.jpeg
-  image_cicular: false # crops the image to make it circular
-  address: >
+  image_circular: false # crops the image to make it circular
+  more_info: >
     <p>6045 South Kenwood Ave<br>
     Chicago, IL 60637<br>
     tianhao.wang@ttic.edu</p>
