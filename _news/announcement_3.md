@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2016-01-15 07:59:00-0400
+date: 2022-07-07
 inline: true
 ---
 
-A simple inline announcement with Markdown emoji! :sparkles: :smile:
+:sparkles: New paper out: <a href="https://arxiv.org/abs/2207.03106">A Simple and Provably Efficient Algorithm for Asynchronous Federated Contextual Linear Bandits</a>.

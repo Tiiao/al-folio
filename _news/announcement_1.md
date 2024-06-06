@@ -1,7 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2022-07-10
 inline: true
 ---
 
-A simple inline announcement.
+:sparkles: New paper out: <a href="https://arxiv.org/abs/2207.04036">Implicit Bias of Gradient Descent on Reparametrized Models: On Equivalence to Mirror Descent</a>.

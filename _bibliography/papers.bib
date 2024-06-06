@@ -1,82 +1,322 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
+###################
+#--- Preprints ---#
+###################
 
-@book{einstein1956investigations,
-  bibtex_show={true},
-  title={Investigations on the Theory of the Brownian Movement},
-  author={Einstein, Albert},
-  year={1956},
-  publisher={Courier Corporation,},
-  preview={brownian-motion.gif}
+@article{sheen2024implicit,
+  title={Implicit regularization of gradient flow on one-layer softmax attention},
+  author={Sheen, Heejune and Chen, Siyu and Wang, Tianhao and Zhou, Harrison H.},
+  abbr={arXiv},
+  journal={arXiv:2403.08699},
+  year={2024},
+  arxiv={2403.08699},
+  comments={Presented at ICLR 2024 Workshop on Bridging the Gap Between Practice and Theory in Deep Learning},
+  selected={true},
+  category={transformer},
+  preprint={true}
 }
 
-@article{einstein1950meaning,
-  abbr={AJP},
-  bibtex_show={true},
-  title={The meaning of relativity},
-  author={Einstein, Albert and Taub, AH},
-  journal={American Journal of Physics,},
-  volume={18},
-  number={6},
-  pages={403--404},
-  year={1950},
-  publisher={American Association of Physics Teachers,}
+@article{giannou2024how,
+  title={How well can Transformers emulate in-context Newton's method?},
+  author={Giannou, Angeliki and Yang, Liu and Wang, Tianhao and Papailiopoulos, Dimitris and Lee, Jason D.},
+  abbr={arXiv},
+  journal={arXiv:2403.03183},
+  year={2024},
+  comments={Presented at ICLR 2024 Workshop on Bridging the Gap Between Practice and Theory in Deep Learning},
+  arxiv={2403.03183},
+  selected={true},
+  category={transformer},
+  preprint={true}
 }
 
-@article{PhysRev.47.777,
-  abbr={PhysRev},
-  title={Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author={Einstein, A. and Podolsky, B. and Rosen, N.},
-  abstract={In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal={Phys. Rev.,},
-  volume={47},
-  issue={10},
-  pages={777--780},
-  numpages={0},
-  year={1935},
-  month={May},
-  publisher=aps,
-  doi={10.1103/PhysRev.47.777},
-  url={http://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html={https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf={example_pdf.pdf},
-  selected={true}
+@article{chen2024training,
+  title={Training dynamics of multi-head softmax attention for in-context learning: emergence, convergence, and optimality},
+  author={Chen, Siyu and Sheen, Heejune and Wang, Tianhao and Yang, Zhuoran},
+  abbr={arXiv},
+  journal={Conference on Learning Theory (COLT)},
+  year={2024},
+  comments={Presented at ICLR 2024 Workshop on Bridging the Gap Between Practice and Theory in Deep Learning},
+  arxiv={2402.19442},
+  selected={true},
+  category={transformer},
+  preprint={false}
 }
 
-@article{einstein1905molekularkinetischen,
-  title={{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author={Einstein, A.},
-  journal={Annalen der physik,},
-  volume={322},
-  number={8},
-  pages={549--560},
-  year={1905},
-  publisher={Wiley Online Library}
+@article{zhong2021approximate,
+  title={Approximate Message Passing for orthogonally invariant ensembles: Multivariate non-linearities and spectral initialization},
+  author={Zhong, Xinyi and Wang, Tianhao and Fan, Zhou},
+  equal={12},
+  abbr={arXiv},
+  journal={Submitted to Information and Inference, minor revision. arXiv:2110.02318},
+  year={2021},
+  abstract={We study a class of Approximate Message Passing (AMP) algorithms for symmetric and rectangular spiked random matrix models with orthogonally invariant noise. The AMP iterates have fixed dimension $K>1$, a multivariate non-linearity is applied in each AMP iteration, and the algorithm is spectrally initialized with $K$ super-critical sample eigenvectors. We derive the forms of the Onsager debiasing coefficients and corresponding AMP state evolution, which depend on the free cumulants of the noise spectral distribution. This extends previous results for such models with $K=1$ and an independent initialization. Applying this approach to Bayesian principal components analysis, we introduce a Bayes-OAMP algorithm that uses as its non-linearity the posterior mean conditional on all preceding AMP iterates. We describe a practical implementation of this algorithm, where all debiasing and state evolution parameters are estimated from the observed data, and we illustrate the accuracy and stability of this approach in simulations.},
+  arxiv={2110.02318},
+  selected={true},
+  category={AMP},
+  preprint={true}
 }
 
-@article{einstein1905movement,
-  abbr={Ann. Phys.},
-  title={Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author={Einstein, A.},
-  journal={Ann. Phys.,},
-  volume={17},
-  pages={549--560},
-  year={1905}
+
+######################
+#--- Publications ---#
+######################
+
+@article{wang2022universality,
+  title={Universality of Approximate Message Passing algorithms and tensor networks},
+  author={Wang, Tianhao and Zhong, Xinyi and Fan, Zhou},
+  abbr={arXiv},
+  journal={The Annals of Applied Probability},
+  year={to appear},
+  abstract={Approximate Message Passing (AMP) algorithms provide a valuable tool for studying mean-field approximations and dynamics in a variety of applications. Although usually derived for matrices having independent Gaussian entries or satisfying rotational invariance in law, their state evolution characterizations are expected to hold over larger universality classes of random matrix ensembles. We develop several new results on AMP universality. For AMP algorithms tailored to independent Gaussian entries, we show that their state evolutions hold over broadly defined generalized Wigner and white noise ensembles, including matrices with heavy-tailed entries and heterogeneous entrywise variances that may arise in data applications. For AMP algorithms tailored to rotational invariance in law, we show that their state evolutions hold over matrix ensembles whose eigenvector bases satisfy only sign and permutation invariances, including sensing matrices composed of subsampled Hadamard or Fourier transforms and diagonal operators. We establish these results via a simplified moment-method proof, reducing AMP universality to the study of products of random matrices and diagonal tensors along a tensor network. As a by-product of our analyses, we show that the aforementioned matrix ensembles satisfy a notion of asymptotic freeness with respect to such tensor networks, which parallels usual definitions of freeness for traces of matrix products.},
+  arxiv={2206.13037},
+  selected={true},
+  category={AMP},
+  preprint={false}
 }
 
-@article{einstein1905electrodynamics,
-  title={On the electrodynamics of moving bodies},
-  author={Einstein, A.},
-  year={1905}
+@article{fan2021maximum,
+  title={Maximum likelihood for high-noise group orbit estimation and single-particle cryo-EM},
+  author={Fan, Zhou and Lederman, Roy R. and Sun, Yi and Wang, Tianhao and Xu, Sheng},
+  abbr={arXiv},
+  journal={The Annals of Statistics},
+  year={2024},
+  link={https://projecteuclid.org/journals/annals-of-statistics/volume-52/issue-1/Maximum-likelihood-for-high-noise-group-orbit-estimation-and-single/10.1214/23-AOS2292.short},
+  abstract={Motivated by applications to single-particle cryo-electron microscopy (cryo-EM), we study several problems of function estimation in a low SNR regime, where samples are observed under random rotations of the function domain. In a general framework of group orbit estimation with linear projection, we describe a stratification of the Fisher information eigenvalues according to a sequence of transcendence degrees in the invariant algebra, and relate critical points of the log-likelihood landscape to a sequence of method-of-moments optimization problems. This extends previous results for a discrete rotation group without projection. We then compute these transcendence degrees and the forms of these moment optimization problems for several examples of function estimation under $SO(2)$ and $SO(3)$ rotations, including a simplified model of cryo-EM as introduced by Bandeira, Blum-Smith, Kileel, Perry, Weed, and Wein. For several of these examples, we affirmatively resolve numerical conjectures that 3rd-order moments are sufficient to locally identify a generic signal up to its rotational orbit. For low-dimensional approximations of the electric potential maps of two small protein molecules, we empirically verify that the noise-scalings of the Fisher information eigenvalues conform with these theoretical predictions over a range of SNR, in a model of $SO(3)$ rotations without projection.},
+  arxiv={2107.01305},
+  selected={true},
+  category={orbit recovery},
+  preprint={false}
 }
 
-@book{przibram1967letters,
-  bibtex_show={true},
-  title={Letters on wave mechanics},
-  author={Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year={1967},
-  publisher={Vision},
-  preview={wave-mechanics.gif}
+@inproceedings{wang2023marginal,
+  title={The Marginal Value of Momentum for Small Learning Rate SGD},
+  author={Wang, Runzhe and Malladi, Sadhika and Wang, Tianhao and Lyu, Kaifeng and Li, Zhiyuan},
+  abbr={ICLR},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2024},
+  abstract={Momentum is known to accelerate the convergence of gradient descent in strongly convex settings without stochastic gradient noise. In stochastic optimization, such as training neural networks, folklore suggests that momentum may help deep learning optimization by reducing the variance of the stochastic gradient update, but previous theoretical analyses do not find momentum to offer any provable acceleration. Theoretical results in this paper clarify the role of momentum in stochastic settings where the learning rate is small and gradient noise is the dominant source of instability, suggesting that SGD with and without momentum behave similarly in the short and long time horizons. Experiments show that momentum indeed has limited benefits for both optimization and generalization in practical training regimes where the optimal learning rate is not very large, including small- to medium-batch training from scratch on ImageNet and fine- tuning language models on downstream tasks.},
+  arxiv={2307.15196},
+  selected={true},
+  category={optimization},
+  preprint={false},
+}
+
+@inproceedings{xu2023noise,
+  title={Noise-adaptive Thompson sampling for linear contextual bandits},
+  author={Xu, Ruitu and Min, Yifei and Wang, Tianhao},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2023},
+  selected={true},
+  category={reinforcement learning},
+  preprint={false},
+}
+
+@inproceedings{min2023cooperative,
+  title={Cooperative multi-Agent reinforcement learning: asynchronous communication and linear function approximation},
+  author={Min, Yifei and He, Jiafan and Wang, Tianhao and Gu, Quanquan},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2023},
+  arxiv={2305.06446},
+  category={reinforcement learning},
+  preprint={false},
+}
+
+@inproceedings{xu2022finding,
+  title={Finding regularized competitive equilibria of heterogeneous agent macroeconomic models via reinforcement learning},
+  author={Xu, Ruitu and Min, Yifei and Wang, Tianhao and Jordan, Michael I. and Wang, Zhaoran and Yang, Zhuoran},
+  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  year={2022},
+  category={reinforcement learning},
+  preprint={false}
+}
+
+@inproceedings{li2022fast,
+  title={Fast mixing of stochastic gradient descent with normalization and weight decay},
+  author={Li, Zhiyuan and Wang, Tianhao and Yu, Dingli},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2022},
+  selected={true},
+  category={optimization},
+  preprint={false}
+}
+
+@inproceedings{min2022learn,
+  title={Learn to match with no regret: Reinforcement learning in Markov matching markets},
+  author={Min, Yifei and Wang, Tianhao and Xu, Ruitu and Wang, Zhaoran and Jordan, Michael I and Yang, Zhuoran},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  highlight={Oral},
+  year={2022},
+  abstract={We study a Markov matching market involving a planner and a set of strategic agents on the two sides of the market. At each step, the agents are presented with a dynamical context, where the contexts determine the utilities. The planner controls the transition of the contexts to maximize the cumulative social welfare, while the agents aim to find a myopic stable matching at each step. Such a setting captures a range of applications including ridesharing platforms. We formalize the problem by proposing a reinforcement learning framework that integrates optimistic value iteration with maximum weight matching. The proposed algorithm addresses the coupled challenges of sequential exploration, matching stability, and function approximation. We prove that the algorithm achieves sublinear regret.},
+  arxiv={2203.03684},
+  selected={true},
+  category={reinforcement learning},
+  preprint={false}
+}
+
+@inproceedings{he2022simple,
+  title={A simple and provably efficient algorithm for asynchronous federated contextual linear bandits},
+  author={He, Jiafan and Wang, Tianhao and Min, Yifei and Gu, Quanquan},
+  equal={123},
+  abbr={NeurIPS},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  year={2022},
+  abstract={We study federated contextual linear bandits, where $M$ agents cooperate with each other to solve a global contextual linear bandit problem with the help of a central server. We consider the asynchronous setting, where all agents work independently and the communication between one agent and the server will not trigger other agents' communication. We propose a simple algorithm named \texttt{FedLinUCB} based on the principle of optimism. We prove that the regret of \texttt{FedLinUCB} is bounded by $\tilde O(d\sqrt{\sum_{m=1}^M T_m})$ and the communication complexity is $\tilde{O}(dM^2)$, where $d$ is the dimension of the contextual vector and $T_m$ is the total number of interactions with the environment by $m$-th agent. To the best of our knowledge, this is the first provably efficient algorithm that allows fully asynchronous communication for federated contextual linear bandits, while achieving the same regret guarantee as in the single-agent setting.},
+  arxiv={2207.03106},
+  selected={true},
+  category={reinforcement learning},
+  preprint={false}
+}
+
+@inproceedings{li2022implicit,
+  title={Implicit bias of gradient descent on reparametrized models: On equivalence to mirror descent},
+  author={Li, Zhiyuan and Wang, Tianhao and Lee, Jason D. and Arora, Sanjeev},
+  equal={12},
+  abbr={NeurIPS},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  abstract={As part of the effort to understand implicit bias of gradient descent in overparametrized models, several results have shown how the training trajectory on the overparametrized model can be understood as mirror descent on a different objective. The main result here is a  characterization of this phenomenon under a notion termed {\em commuting parametrization}, which encompasses all the previous results in this setting. It is shown that gradient flow with any commuting parametrization is equivalent to continuous mirror descent with a related Legendre function. Conversely, continuous mirror descent with any Legendre function can be viewed as gradient flow with a related commuting parametrization. The latter result relies upon Nash's embedding theorem. },
+  arxiv={2207.04036},
+  year={2022},
+  selected={true},
+  category={optimization},
+  preprint={false},
+  comments={Abridged version accepted for a contributed talk to <a href="https://sites.google.com/view/continuous-time-methods-icml/home">ICML 2022 Workshop on Continuous time methods for machine learning</a>},
+  slides={commuting_slides.pdf},
+  poster={commuting_poster.pdf}
+}
+
+@inproceedings{min2021learning,
+  title={Learning stochastic shortest path with linear function approximation},
+  author={Min, Yifei and He, Jiafan and Wang, Tianhao and Gu, Quanquan},
+  abbr={ICML},
+  booktitle={International Conference on Machine Learning (ICML)},
+  year={2022},
+  organization={PMLR},
+  abstract={We study the stochastic shortest path (SSP) problem in reinforcement learning with linear function approximation, where the transition kernel is represented as a linear mixture of unknown models. We call this class of SSP problems as linear mixture SSPs. We propose a novel algorithm with Hoeffding-type confidence sets for learning the linear mixture SSP, which can attain an $\tilde{\mathcal{O}}(d B_{\star}^{1.5}\sqrt{K/c_{\min}})$ regret. Here $K$ is the number of episodes, $d$ is the dimension of the feature mapping in the mixture model, $B_{\star}$ bounds the expected cumulative cost of the optimal policy, and $c_{\min}>0$ is the lower bound of the cost function. Our algorithm also applies to the case when $c_{\min} = 0$, and an $\tilde{\mathcal{O}}(K^{2/3})$ regret is guaranteed. To the best of our knowledge, this is the first algorithm with a sublinear regret guarantee for learning linear mixture SSP. Moreover, we design a refined Bernstein-type confidence set and propose an improved algorithm, which provably achieves an $\tilde{\mathcal{O}}(d B_{\star}\sqrt{K/c_{\min}})$ regret. In complement to the regret upper bounds, we also prove a lower bound of $\Omega(dB_{\star} \sqrt{K})$. Hence, our improved algorithm matches the lower bound up to a $1/\sqrt{c_{\min}}$ factor and poly-logarithmic factors, achieving a near-optimal regret guarantee.},
+  link={},
+  arxiv={2110.12727},
+  category={reinforcement learning},
+  preprint={false},
+  slides={SSP_slides.pdf},
+  poster={SSP_poster.pdf}
+}
+
+@inproceedings{li2021happens,
+  title={What happens after SGD reaches zero loss?--A mathematical framework},
+  author={Li, Zhiyuan and Wang, Tianhao and Arora, Sanjeev},
+  abbr={ICLR},
+  highlight={Spotlight},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2022},
+  abstract={Understanding the implicit bias of Stochastic Gradient Descent (SGD) is one of the key challenges in deep learning, especially for overparametrized models, where the local minimizers of the loss function $L$ can form a manifold. Intuitively, with a sufficiently small learning rate $\eta$, SGD tracks Gradient Descent (GD) until it gets close to such manifold, where the gradient noise prevents further convergence.  In such a regime, Blanc et al. (2020) proved that SGD with label noise locally decreases a regularizer-like term, the sharpness of loss, $\text{tr}[\nabla^2 L]$. The current paper gives a general framework for such analysis by adapting ideas from Katzenberger(1991). It allows in principle a complete characterization for the regularization effect of SGD around such manifold---i.e., the "implicit bias"---using a stochastic differential equation (SDE) describing the limiting dynamics of the parameters, which is determined jointly by the loss function and the noise covariance. This yields some new results:  (1) a \emph{global} analysis of the implicit bias valid for $\eta^{-2}$ steps, in contrast to the local analysis of Blanc et al. (2020) that is only valid for $\eta^{-1.6}$ steps and (2) allowing \emph{arbitrary} noise covariance. As an application, we show with arbitrary large initialization, label noise SGD can always escape the kernel regime and only requires $O(\kappa\ln d)$ samples for learning an $\kappa$-sparse overparametrized linear model in $\mathbb{R}^d$ (Woodworth et al., 2020), while GD initialized in the kernel regime requires $\Omega(d)$ samples. This upper bound is minimax optimal and improves the previous $\widetilde{O}(\kappa^2)$ upper bound (HaoChen et al., 2020).},
+  link={https://openreview.net/forum?id=siCt4xZn5Ve},
+  arxiv={2110.06914},
+  selected={true},
+  category={optimization},
+  preprint={false},
+  slides={diffusion_manifold_slides.pdf},
+  poster={diffusion_manifold_poster.pdf}
+}
+
+@article{valentino2022north,
+  title={North American biliary stricture management strategies in children after liver transplantation: a multicenter analysis from the society of pediatric liver transplantation (SPLIT) registry},
+  author={Valentino, Pamela L and Wang, Tianhao and Shabanova, Veronika and Ng, Vicky Lee and Bucuvalas, John C and Feldman, Amy G and Gonzalez-Peralta, Regino P and Gupta, Nitika Arora and Miloh, Tamir A and Mohammad, Saeed and others},
+  abbr={Journal},
+  journal={Liver Transplantation},
+  volume={28},
+  number={5},
+  pages={819--833},
+  year={2022},
+  publisher={Wiley Online Library},
+  link={https://aasldpubs.onlinelibrary.wiley.com/doi/abs/10.1002/lt.26379},
+  preprint={false}
+}
+
+@inproceedings{min2021variance,
+  title={Variance-aware off-policy evaluation with linear function approximation},
+  author={Min, Yifei and Wang, Tianhao and Zhou, Dongruo and Gu, Quanquan},
+  equal={12},
+  abbr={NeurIPS},
+  booktitle={Advances in neural information processing systems (NeurIPS)},
+  volume={34},
+  pages={7598--7610},
+  year={2021},
+  abstract={We study the off-policy evaluation (OPE) problem in reinforcement learning with linear function approximation, which aims to estimate the value function of a target policy based on the offline data collected by a behavior policy. We propose to incorporate the variance information of the value function to improve the sample efficiency of OPE. More specifically, for time-inhomogeneous episodic linear Markov decision processes (MDPs), we propose an algorithm, VA-OPE, which uses the estimated variance of the value function to reweight the Bellman residual in Fitted Q-Iteration. We show that our algorithm achieves a tighter error bound than the best-known result. We also provide a fine-grained characterization of the distribution shift between the behavior policy and the target policy. Extensive numerical experiments corroborate our theory.},
+  link={https://proceedings.neurips.cc/paper/2021/hash/3e6260b81898beacda3d16db379ed329-Abstract.html},
+  arxiv={2106.11960},
+  selected={true},
+  category={reinforcement learning},
+  preprint={false},
+  slides={VAOPE_slides.pdf},
+  poster={VAOPE_poster.pdf}
+}
+
+@inproceedings{wang2021provably,
+  title={Provably efficient reinforcement learning with linear function approximation under adaptivity constraints},
+  author={Wang, Tianhao and Zhou, Dongruo and Gu, Quanquan},
+  equal={12},
+  abbr={NeurIPS},
+  booktitle={Advances in Neural Information Processing Systems (NeurIPS)},
+  volume={34},
+  pages={13524--13536},
+  year={2021},
+  abstract={We study reinforcement learning (RL) with linear function approximation under the adaptivity constraint. We consider two popular limited adaptivity models: the batch learning model and the rare policy switch model, and propose two efficient online RL algorithms for episodic linear Markov decision processes, where the transition probability and the reward function can be represented as a linear function of some known feature mapping. In specific, for the batch learning model, our proposed LSVI-UCB-Batch algorithm achieves an $\widetilde{O}(\sqrt{d^3 H^3 T} + dHT/B)$ regret, where $d$ is the dimension of the feature mapping, $H$ is the episode length, $T$ is the number of interactions and $B$ is the number of batches. Our result suggests that it suffices to use only $\sqrt{T/dH}$ batches to obtain $\tilde{O}(d^3 H^3 T)$ regret. For the rare policy switch model, our proposed LSVI-UCB-RareSwitch algorithm enjoys an $\tilde{O}(d^3 H^3 T [1 + T/(dH)]^{dH/B})$ regret, which implies that $d H \log T $ policy switches suffice to obtain the $\tilde{O}(d^3 H^3 T)$ regret. Our algorithms achieve the same regret as the LSVI-UCB algorithm (Jin et al., 2020), yet with a substantially smaller amount of adaptivity. We also establish a lower bound for the batch learning model, which suggests that the dependency on B in our regret bound is tight.},
+  link={https://proceedings.neurips.cc/paper/2021/hash/70a32110fff0f26d301e58ebbca9cb9f-Abstract.html},
+  arxiv={2101.02195},
+  selected={true},
+  category={reinforcement learning},
+  preprint={false},
+  slides={LSC_slides.pdf},
+  poster={LSC_poster.pdf}
+}
+
+@article{fan2020likelihood,
+  title={Likelihood landscape and maximum likelihood estimation for the discrete orbit recovery model},
+  author={Fan, Zhou and Sun, Yi and Wang, Tianhao and Wu, Yihong},
+  abbr={CPAM},
+  journal={Communications on Pure and Applied Mathematics},
+  publisher={Wiley Online Library},
+  year={2022},
+  abstract={We study the non-convex optimization landscape for maximum likelihood estimation in the discrete orbit recovery model with Gaussian noise. This is a statistical model motivated by applications in molecular microscopy and image processing, where each measurement of an unknown object is subject to an independent random rotation from a known rotational group. Equivalently, it is a Gaussian mixture model where the mixture centers belong to a group orbit.\\
+  We show that fundamental properties of the likelihood landscape depend on the signal-to-noise ratio and the group structure. At low noise, this landscape is “benign” for any discrete group, possessing no spurious local optima and only strict saddle points. At high noise, this landscape may develop spurious local optima, depending on the specific group. We discuss several positive and negative examples, and provide a general condition that ensures a globally benign landscape at high noise. For cyclic permutations of coordinates on $\mathbb{R}^d$ (multi-reference alignment), there may be spurious local optima when $d \geq 6$, and we establish a correspondence between these local optima and those of a surrogate function of the phase variables in the Fourier domain.\\
+  We show that the Fisher information matrix transitions from resembling that of a single Gaussian distribution in low noise to having a graded eigenvalue structure in high noise, which is determined by the graded algebra of invariant polynomials under the group action. In a local neighborhood of the true object, where the neighborhood size is independent of the signal-to-noise ratio, the landscape is strongly convex in a reparametrized system of variables given by a transcendence basis of this polynomial algebra. We discuss implications for optimization algorithms, including slow convergence of expectation-maximization, and possible advantages of momentum-based acceleration and variable reparametrization for first- and second-order descent methods.},
+  link={https://onlinelibrary.wiley.com/doi/abs/10.1002/cpa.22032},
+  arxiv={2004.00041},
+  selected={true},
+  category={orbit recovery},
+  preprint={false}
+}
+
+@inproceedings{xu2018continuous,
+  title={Continuous and discrete-time accelerated stochastic mirror descent for strongly convex functions},
+  author={Pan Xu and Tianhao Wang and Quanquan Gu},
+  equal={12},
+  abbr={ICML},
+  booktitle={International Conference on Machine Learning (ICML)},
+  pages={5492--5501},
+  year={2018},
+  organization={PMLR},
+  abstract={We provide a second-order stochastic differential equation (SDE), which characterizes the continuous-time dynamics of accelerated stochastic mirror descent (ASMD) for strongly convex functions. This SDE plays a central role in designing new discrete-time ASMD algorithms via numerical discretization, and providing neat analyses of their convergence rates based on Lyapunov functions. Our results suggest that the only existing ASMD algorithm, namely, AC-SA proposed in Ghadimi & Lan (2012) is one instance of its kind, and we can actually derive new instances of ASMD with fewer tuning parameters. This sheds light on revisiting accelerated stochastic optimization through the lens of SDEs, which can lead to a better understanding of acceleration in stochastic optimization, as well as new simpler algorithms. Numerical experiments on both synthetic and real data support our theory.},
+  link={https://proceedings.mlr.press/v80/xu18g.html},
+  pdf={https://proceedings.mlr.press/v80/xu18g/xu18g.pdf},
+  supp={https://proceedings.mlr.press/v80/xu18g/xu18g-supp.pdf},
+  category={optimization},
+  preprint={false}
+}
+
+@inproceedings{xu2018accelerated,
+  title={Accelerated stochastic mirror descent: From continuous-time dynamics to discrete-time algorithms},
+  author={Xu, Pan and Wang, Tianhao and Gu, Quanquan},
+  equal={12},
+  abbr={AISTATS},
+  booktitle={International Conference on Artificial Intelligence and Statistics (AISTATS)},
+  pages={1087--1096},
+  year={2018},
+  organization={PMLR}, 
+  abstract={We present a new framework to analyze accelerated stochastic mirror descent through the lens of continuous-time stochastic dynamic systems. It enables us to design new algorithms, and perform a unified and simple analysis of the convergence rates of these algorithms. More specifically, under this framework, we provide a Lyapunov function based analysis for the continuous-time stochastic dynamics, as well as several new discrete-time algorithms derived from the continuous-time dynamics. We show that for general convex objective functions, the derived discrete-time algorithms attain the optimal convergence rate. Empirical experiments corroborate our theory.},
+  link={https://proceedings.mlr.press/v84/xu18e.html},
+  pdf={https://proceedings.mlr.press/v84/xu18e/xu18e.pdf},
+  category={optimization},
+  preprint={false}
 }
