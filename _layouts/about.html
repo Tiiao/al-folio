@@ -48,6 +48,7 @@ layout: default
             <!-- {%- endif %} -->
           </div>
           {%- endif %}
+
           <!-- <p class="desc">{{page.subtitle}}</p> -->
           <div class="clearfix">
             {{ content }}
@@ -65,14 +66,14 @@ layout: default
             <div class="contact-note">
               {{ site.contact_note }}
             </div>
-          
           </div>
           {%- endif %}
 
-          {% if page.news -%}
+          <!-- {% if page.news -%} -->
           <!-- News -->
-          {%- include news.html %}
-          {%- endif %}
+          <!-- {%- include news.html %} -->
+          <!-- {%- endif %} -->
+
           {% if page.selected_papers -%}
             <!-- Selected papers -->
             {%- include selected_papers.html %}
